@@ -346,3 +346,4 @@ function updateWorkout(res, originalId, category, exercise, muscle_focus, sets, 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });// Server configuration - Express and Mustache setup
+// Form validation implementation using express-validator
