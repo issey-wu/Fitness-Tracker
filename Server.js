@@ -347,3 +347,4 @@ app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });// Server configuration - Express and Mustache setup
 // Form validation implementation using express-validator
+// Fixed bug: Ensuring proper ID parsing in delete workout functionality
