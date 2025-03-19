@@ -1,0 +1,15 @@
+INSTRUCTIONS TO RUN FITNESS TRACKER APP:
+
+1. Install dependencies:
+npm install
+
+2. Run application:
+npm start
+   
+   (Or alternatively: node server.js)
+
+3. Open browser:
+http://localhost:3000
+
+4. View sample data:
+Select date 2025-03-10 to see existing workout data.
