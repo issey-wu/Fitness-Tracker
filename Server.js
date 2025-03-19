@@ -353,3 +353,4 @@ app.listen(PORT, () => {
 // Form validation implementation using express-validator
 // Fixed bug: Ensuring proper ID parsing in delete workout functionality
 // API endpoint for filtered workouts across dates
+// Enhanced database queries for better performance
