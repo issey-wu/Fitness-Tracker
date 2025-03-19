@@ -351,3 +351,4 @@ app.listen(PORT, () => {
 // API endpoint for filtered workouts across dates
 // Server configuration - Express and Mustache setup
 // Form validation implementation using express-validator
+// Fixed bug: Ensuring proper ID parsing in delete workout functionality
