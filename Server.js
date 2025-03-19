@@ -355,3 +355,4 @@ app.listen(PORT, () => {
 // API endpoint for filtered workouts across dates
 // Enhanced database queries for better performance
 // Support for paginated results when viewing large datasets
+// Enhanced error handling with user-friendly messages
