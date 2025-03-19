@@ -783,3 +783,4 @@ function populateEditFormDropdowns() {
     initDropdownSubmenus();
     setupDataChangeListeners();
   });// Enhanced filter functionality for user experience
+// Enhanced filter functionality for user experience
