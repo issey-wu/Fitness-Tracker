@@ -1,0 +1,278 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  background-color: #007BFF;
+  padding: 10px;
+}
+
+.container-fluid {
+  margin-top: 20px;
+}
+
+/* Responsive layout improvements */
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .movement-block {
+    max-width: 1200px;
+  }
+  
+  .movement-block h5 {
+    font-size: 1.4rem;
+  }
+}
+
+.date-btn, .cat-btn {
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.table-responsive {
+  margin-top: 10px;
+}
+
+/* Navbar brand & toggler alignment - updated */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+
+/* Hide the edit-cell by default; show view-cell by default */
+.set-row .edit-cell {
+  display: none;
+}
+.set-row .view-cell {
+  display: table-cell;
+}
+
+/* Table styling improvements */
+.view-table {
+  table-layout: fixed;
+}
+
+.edit-form {
+  max-width: 1000px;
+}
+
+@media (min-width: 992px) {
+  .edit-form .form-control {
+    width: 100% !important;
+  }
+}
+
+/* Create workout form improvements */
+#createWorkoutForm .card {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Fix spacing for first row */
+.row:first-of-type {
+  margin-bottom: 20px;
+}
+
+/* Give consistent spacing between blocks */
+.movement-block {
+  margin-bottom: 2rem;
+}
+
+/* Improve spacing in full-screen mode */
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  
+  .row {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Make inputs fill table cells in edit mode */
+.edit-cell input {
+  width: 100%;
+}
+
+/* Ensure textareas for notes are large enough and scrollable */
+.edit-cell textarea.form-control {
+  height: auto;
+  min-height: 60px;
+  resize: vertical;
+  overflow: auto;
+}
+
+/* Additional styling for edit mode highlight */
+.edit-mode .movement-block {
+  background-color: #f8f9fa;
+  border-left: 4px solid #0d6efd;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.edit-mode .movement-block h5 {
+  color: #0d6efd;
+}
+
+/* Fixed width for Set column */
+.set-column {
+  width: 80px;
+}
+
+/* Make edit cells fit properly */
+.edit-cell {
+  width: 100%;
+  padding: 0;
+}
+
+.edit-cell .form-control {
+  border-radius: 0;
+  border: 1px solid #dee2e6;
+}
+
+/* Add some padding to save/cancel buttons area */
+.edit-buttons {
+  padding: 10px 0;
+}
+
+/* Dropdown submenu styling */
+.dropdown-submenu {
+  position: relative;
+}
+
+/* Base styling for dropdown submenus - hidden by default */
+.dropdown-submenu > .dropdown-menu {
+  position: absolute;
+  z-index: 1100;
+  min-width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: none;
+  left: 100%;
+  top: 0;
+  margin-top: -1px;
+  border-radius: 0.25rem;
+}
+
+.dropdown-submenu > .dropdown-menu.show {
+  display: block;
+}
+
+/* Styling for dropdown toggle items */
+.dropdown-submenu > .dropdown-item.dropdown-toggle {
+  position: relative;
+  padding-right: 2rem;
+}
+
+/* Arrow for dropdown submenus */
+.dropdown-submenu > .dropdown-item.dropdown-toggle::after {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-right: 0;
+  border-bottom: 0.3em solid transparent;
+  border-left: 0.3em solid;
+}
+
+/* Hover effects */
+.dropdown-submenu > .dropdown-item:hover,
+.dropdown-submenu > .dropdown-item:focus {
+  background-color: #f8f9fa;
+}
+
+/* Ensure white text for navbar links */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #ffffff;
+}
+
+/* Right-align dropdown menus on larger screens */
+@media (min-width: 992px) {
+  .dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 991px) {
+  .dropdown-submenu > .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    box-shadow: none;
+    border: none;
+    padding-left: 1rem;
+  }
+  
+  .dropdown-submenu > .dropdown-item.dropdown-toggle::after {
+    transform: rotate(90deg) translateX(-50%);
+    right: 1rem;
+  }
+}
+
+/* Style for filter indicator */
+#filterDropdown.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Style for clear filter button */
+#clearFilterOption .nav-link {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+#clearFilterOption .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Highlight for filtered workouts */
+.highlight-filtered {
+  border-left: 4px solid #0d6efd;
+  padding-left: 10px;
+  background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Nicer date headers in filtered view */
+.date-header {
+  background-color: #f8f9fa;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border-left: 4px solid #6c757d;
+}
+
+/* Category/Exercise/Muscle Focus selects in edit mode */
+.edit-cell select.form-select {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.edit-cell .form-label {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
