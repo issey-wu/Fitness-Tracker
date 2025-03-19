@@ -782,4 +782,4 @@ function populateEditFormDropdowns() {
     populateFilterDropdowns();
     initDropdownSubmenus();
     setupDataChangeListeners();
-  });
+  });// Enhanced filter functionality for user experience
