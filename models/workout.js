@@ -1,4 +1,4 @@
-// models/workout.js
+// This file contains the model for the workouts table, which is used to interact with the database.
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./workouts.db');
 
