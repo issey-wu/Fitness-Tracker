@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Create HTML for a complete workout entry
     function createWorkoutEntryHTML(workout, date) {
-      // This should match your existing workout display but as HTML string
+      // This should match the existing workout display but as HTML string
       let html = `
         <div class="movement-block mb-4"
              data-category="${workout.category}"
@@ -783,4 +783,3 @@ function populateEditFormDropdowns() {
     initDropdownSubmenus();
     setupDataChangeListeners();
   });// Enhanced filter functionality for user experience
-// Enhanced filter functionality for user experience
