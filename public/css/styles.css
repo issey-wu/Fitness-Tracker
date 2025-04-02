@@ -275,6 +275,51 @@ body {
 .edit-cell .form-label {
   margin-bottom: 0.25rem;
   font-weight: 500;
-}/* Improved mobile responsiveness at 768px breakpoint */
-/* Improved mobile responsiveness at 768px breakpoint */
-/* Added ARIA attributes and improved keyboard navigation */
+}
+
+/* Edit mode labels visibility in full screen */
+.edit-mode .movement-block .row.mb-3.edit-cell {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+  width: 100%;
+}
+
+.edit-mode .movement-block .row.mb-3.edit-cell .col-md-4 {
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.edit-mode .movement-block .edit-cell .form-label {
+  display: block;
+  white-space: nowrap;
+  overflow: visible;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+/* Adjust width of select elements to ensure they fit properly, but only in edit mode */
+.edit-mode .movement-block .edit-cell select.form-select {
+  width: 100%;
+  min-width: 150px;
+}
+
+
+/* Specifically for large screens */
+@media (min-width: 1200px) {
+  /* More breathing room in edit mode for larger screens */
+  .edit-mode .movement-block .row.mb-3.edit-cell {
+    margin-bottom: 15px;
+  }
+  
+  .edit-mode .movement-block .row.mb-3.edit-cell .col-md-4 {
+    flex: 0 0 33%;  /* Even spacing */
+    max-width: 33%;
+  }
+  
+  /* Ensure text doesn't shrink too small */
+  .edit-mode .movement-block .edit-cell .form-label {
+    font-size: 1rem;
+  }
+}
