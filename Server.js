@@ -1,15 +1,4 @@
-/**
- * Fitness Tracker Application
- *
- * A web application to help users log workouts, track progress,
- * and categorize exercises based on muscle groups.
- *
- * SFWRTECH 4WP3 Project
- * Author: Issey Wu
- * Date: March 2025
- */
-
-require('dotenv').config();
+// require('dotenv').config(); //
 const express = require('express');
 const mustacheExpress = require('mustache-express');
 const bodyParser = require('body-parser');
