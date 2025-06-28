@@ -2,7 +2,7 @@
 if (process.env.VERCEL || process.env.NODE_ENV === 'production') {
   // Use mock database for Vercel/production
   console.log('Using mock database for Vercel deployment');
-  module.exports = require('../database-mock');
+  module.exports = require('../vercel-db');
 } else {
   // Use real SQLite for local development
   console.log('Using SQLite database for local development');
